@@ -51,6 +51,5 @@ function outputRoomName(room){
 }
 
 function outputUsers(users){
-   console.log('>>>>users',users);
    usersList.innerHTML=`${users.map(activeUser=>`<li>${activeUser.username}</li>`).join('')}`
 }

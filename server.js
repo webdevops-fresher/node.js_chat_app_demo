@@ -46,6 +46,8 @@ io.on("connection", (socket) => {
         io.to(currentUser.room).emit('roomUsers',{room:currentUser.room,users:getRoomUsers(currentUser.room)})
     }
   });
+
+  
 });
 
 server.listen(PORT, () => console.log(`server running on ${PORT}`));
